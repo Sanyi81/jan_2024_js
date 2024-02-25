@@ -32,13 +32,13 @@ let book_1 = {title: 'The wave', pageCount: 512, genre: 'sci-fi',
     ]
 };
 let book_2 = {title: 'Sherlock Holmes. New stories', pageCount: 502, genre: 'detective',
-    author: [
+    authors: [
         {name: 'Arthur Boyle', age: 28},
         {name: 'Samantha McArthur', age: 26}
     ]
 };
 let book_3 = {title: 'The lost', pageCount: 432, genre: 'journey',
-    author: [
+    authors: [
         {name: 'James Per', age: 37},
         {name: 'Michael Bea4', age: 42},
         {name: 'Sofi Degual', age: 27},
