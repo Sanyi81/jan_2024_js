@@ -25,21 +25,25 @@
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється
 // масивом. Кожен автор має поля name та age.
 
-// let book_1 = {title: 'The 5th wave', pageCount: 512, genre: 'sci-fi',
-//     author:[
-//         {name: 'Rick Yansey', age: 61}
-//     ]
-// };
-// let book_2 = {title: 'Sherlock Holmes', pageCount: 502, genre: 'detective',
-//     author: [
-//         {name: 'Arthur Conan Doyle', age: 28}
-//     ]
-// };
-// let book_3 = {title: 'The last of the Mohicans', pageCount: 432, genre: 'journey',
-//     author: [
-//         {name: 'James Fenimore Cooper', age: 37}
-//     ]
-// };
+let book_1 = {title: 'The wave', pageCount: 512, genre: 'sci-fi',
+    authors:[
+        {name: 'Rick Yansey', age: 61},
+        {name: 'Daniel Jackson', age: 44}
+    ]
+};
+let book_2 = {title: 'Sherlock Holmes. New stories', pageCount: 502, genre: 'detective',
+    author: [
+        {name: 'Arthur Boyle', age: 28},
+        {name: 'Samantha McArthur', age: 26}
+    ]
+};
+let book_3 = {title: 'The lost', pageCount: 432, genre: 'journey',
+    author: [
+        {name: 'James Per', age: 37},
+        {name: 'Michael Bea4', age: 42},
+        {name: 'Sofi Degual', age: 27},
+    ]
+};
 
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль
 // пароль кожного користувача
