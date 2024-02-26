@@ -141,7 +141,7 @@
 //         alert('Friday');
 //         break;
 //     case 6:
-//         alert('Sunday');
+//         alert('Saturday');
 //         break;
 //     case 7:
 //         alert('Sunday');
