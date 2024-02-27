@@ -108,13 +108,12 @@
 //
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
 
-// let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-//
-// for (const list of listOfItems) {
-//     document.write(`<ul>
-//         <li>${list}</li>
-//     </ul>`)
-// }
+let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+document.write('<ul>');
+for (const list of listOfItems) {
+    document.write(`<li>${list}</li>`);
+}
+document.write('</ul>');
 
 // -----------------------------------------------
 //
@@ -179,20 +178,21 @@ let users = [
 // за допомоги циклу вивести:
 //     - користувачів зі статусом true
 // - користувачів зі статусом false
-// - користувачів які старші за 30 років
 
+// - користувачів які старші за 30 років
 for (const user of users) {
     // if (user.status === true) {
     //     console.log(user);
-    // }
 
+    // }
     // if (user.status === false) {
     //     console.log(user);
-    // }
 
+    // }
     if (user.age > 30) {
         console.log(user);
     }
-}
 
+}
 // ---------------------------------------------------------
+
