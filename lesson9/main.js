@@ -71,8 +71,10 @@
 // for (const element of coursesAndDurationArray) {
 //
 //     let h1 = document.createElement('h1');
+//     h1.classList.add('heading');
 //     h1.innerText = `Title: ${element.title}`;
 //     let p = document.createElement('p');
+//     p.classList.add('description');
 //     p.innerText = `Spend time: ${element.monthDuration} months`;
 //
 //     div.append(h1, p);
