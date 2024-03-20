@@ -5,20 +5,11 @@ let count = localStorage.getItem('count') || 0;
 let div = document.createElement('div');
 div.innerText = `${count}`;
 let newCount = +count + 1;
-div.innerText = newCount;
+div.innerText = 'Count:' + newCount;
 localStorage.setItem('count', newCount);
 document.body.appendChild(div);
 
 // ==========================
-
-
-// =========================
-//     зробити масив на 100 об'єктів та дві кнопки prev next
-// при завантажені сторінки з'являються перші 10 об'єктів.
-//     При натисканні next виводяться настпні 10 об'єктів
-// При натисканні prev виводяться попередні 10 об'єктів
-
-
 
 // - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні
 // на кнопку зникав елемент з id="text".

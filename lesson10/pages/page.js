@@ -9,16 +9,16 @@ for (let i = 0; i < 100; i++) {
     let div = document.createElement('div');
     div.innerText = i+1 + '. ' + 'some text' + ', ' + 'some data';
 
-    document.body.appendChild(div);
+    // document.body.appendChild(div);
+    array.push(div)
 }
-
-let prev = document.createElement('prev');
-let next = document.createElement('next');
+// let prev = document.createElement('prev');
+// let next = document.createElement('next');
 
 let page = 1;
 
 function handler(page, limit) {
-    let wrapper = document.createElement('wrapper');
+    // let wrapper = document.createElement('wrapper');
 
     let startIndex = (page - 1) * limit;
     let endIndex = page * limit;
