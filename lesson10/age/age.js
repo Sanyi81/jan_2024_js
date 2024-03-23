@@ -5,21 +5,10 @@ let ageForm = document.forms.send;
 ageForm.onsubmit = function (e) {
     e.preventDefault();
 
-    let div = document.createElement('div');
-    let input = document.getElementsByName('age');
-    let result = document.createElement('h3');
-    age.push(input);
-    div.append(result)
-
-    switch (input) {
-        case age >= 18:
-            result.innerText = 'You are older than 18 years old and you are adult';
-            break;
-        case age < 18:
-            result.innerText = 'You are younger than 18 years old and you are child';
-            break;
+    if (this.age.value < 18) {
+        return alert('You are younger than 18 years old and you are child');
     }
-    return result;
+
+    return alert('You are older than 18 years old and you are adult');
 
 }
-document.body.appendChild(div);
