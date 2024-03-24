@@ -15,9 +15,11 @@ fetch('http://jsonplaceholder.typicode.com/users')
 
             let btn = document.createElement('button');
             userBlock.appendChild(btn);
+
             let a = document.createElement('a');
             a.href = ` ./user_details.html?id=${user.id}`;
             a.innerText = 'Looking for details';
+
             btn.appendChild(a);
     })
     );
