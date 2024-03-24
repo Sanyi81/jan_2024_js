@@ -44,8 +44,69 @@ fetch(url)
         let {recipes} = value;
         for (const recipe of recipes) {
             let recipeBlock = document.createElement('div');
-
+            let recipeName = document.createElement('h4');
+            recipeName.innerText = `${recipe.id}. ${recipe.name}`;
+            let img = document.createElement('img');
+            img.classList.add('img');
+            img.src = recipe.image;
+            let ingr = document.createElement('p');
+            ingr.innerText = 'Ingredients:';
+            let ingrList = document.createElement('ul');
+            for (const ingrElement of recipe.ingredients) {
+                let listOfIngr = document.createElement('li');
+                listOfIngr.innerText = ingrElement;
+                ingrList.appendChild(listOfIngr);
+                ingr.appendChild(ingrList);
+            }
+            let instr = document.createElement('p');
+            instr.innerText = 'Instructions:';
+            let instrList = document.createElement('ul');
+            for (const instrElement of recipe.instructions) {
+                let listOfInstr = document.createElement('li');
+                listOfInstr.innerText = `${instrElement}`;
+                instrList.appendChild(listOfInstr);
+                instr.appendChild(instrList);
+            }
+            let prepTime = document.createElement('p');
+            prepTime.innerText = `Preparing time:  ${recipe.prepTimeMinutes} min`;
+            let cookTime = document.createElement('p');
+            cookTime.innerText = `Cooking time: ${recipe.cookTimeMinutes} min`;
+            let servings = document.createElement('p');
+            servings.innerText = `Servings: ${recipe.servings}`;
+            let diff = document.createElement('p');
+            diff.innerText = `Difficultly: ${recipe.difficulty}`;
+            let cuisine = document.createElement('p');
+            cuisine.innerText = `Cuisine: ${recipe.cuisine}`;
+            let cal = document.createElement('p');
+            cal.innerText = `Calories per serving: ${recipe.caloriesPerServing} kCal`;
+            let tags = document.createElement('p');
+            tags.innerText = 'Tags:';
+            let tagList = document.createElement('ul');
+            for (const tag of recipe.tags) {
+                let listOfTags = document.createElement('li');
+                listOfTags.innerText = `${tag}`;
+                tagList.appendChild(listOfTags);
+                tags.appendChild(tagList);
+            }
+            let user = document.createElement('p');
+            user.innerText = `User: ${recipe.userId}`;
+            let rating = document.createElement('p');
+            rating.innerText = `Rating: ${recipe.rating}`;
+            let review = document.createElement('p');
+            review.innerText = `Review: ${recipe.reviewCount}`;
+            let mealType = document.createElement('p');
+            mealType.innerText = 'Meal type:';
+            let mealList = document.createElement('ul');
+            for (const mealTypeElement of recipe.mealType) {
+                let typeOfMeal = document.createElement('li');
+                typeOfMeal.innerText = `${mealTypeElement}`;
+                mealList.appendChild(typeOfMeal);
+                mealType.appendChild(mealList);
+            }
+            recipeBlock.append(recipeName, img, ingr, instr, prepTime, cookTime, servings, diff, cuisine, cal, tags, user, rating, review, mealType)
+            div.appendChild(recipeBlock);
         }
+        document.body.appendChild(div);
     })
 
 //     - зробити файл users.html
